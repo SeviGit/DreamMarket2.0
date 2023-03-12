@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,body {
+    background-color: #202225;
+    padding: 0;
+    margin: 0;
+    font-family:'fuente';
+    
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*  Collections Frame*/
+  .marco {
+      border: 20px solid transparent;
+      padding: 15px;
+      border-image: url(../assets/marco1.png) 100 stretch;
+   
+    }
+
+/* Fonts */
+  @font-face{
+      font-family:'benyo';
+      src: url('../assets/BEYNO.ttf');
+  }
+
+  @font-face{
+    font-family:'fuente';
+    src: url('../assets/Montserrat.ttf');
+}
+
+.fuente{
+    font-family: 'fuente';
+}
+
+/* Card Button */
+.btn-card {
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .btn-g{
+    width:150px;
+    height: 55px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .btn-f{
+    width:100%;
+    height: 55px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  
+  
+
+ 
+
+  /* 7 Sin uso*/
+.btn-7 {
+    background: linear-gradient(0deg, rgb(0, 0, 0) 25%, rgb(153, 145, 153) 100%);
+      line-height: 30px;
+      padding: 0;
+      border: none;
+    }
+    .btn-7 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .btn-7:before,
+    .btn-7:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background:rgb(103 232 249);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-7:before{
+       height: 0%;
+       width: 2px;
+    }
+    .btn-7:after {
+      width: 0%;
+      height: 2px;
+    }
+    .btn-7:hover{
+      color:  rgb(103 232 249);
+      background: transparent;
+    }
+    .btn-7:hover:before {
+      height: 100%;
+    }
+    .btn-7:hover:after {
+      width: 100%;
+    }
+    .btn-7 span:before,
+    .btn-7 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: rgb(103 232 249);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-7 span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .btn-7 span:after {
+      height: 2px;
+      width: 0%;
+    }
+    .btn-7 span:hover:before {
+      height: 100%;
+    }
+    .btn-7 span:hover:after {
+      width: 100%;
+    }
+    
+
+
+
+ Button out.line
+.btn-out {
+    background: linear-gradient(0deg, rgb(108, 110, 115) 35%, rgb(235, 171, 242) 100%);
+      line-height: 50px;
+      padding: 0;
+      border: none;
+    }
+   
+    
+
+/* Button lineBlue */
+
+    .btn-on {
+        background: linear-gradient(0deg, rgb(45, 67, 123) 35%, rgb(201, 21, 217) 100%);
+          line-height: 50px;
+          padding: 0;
+          border: none;
+        }
+       
+
+    
+ /* Frame span */
+
+    .span span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .span:before,
+    .span:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background:rgb(103 232 249);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .span:before{
+       height: 0%;
+       width: 2px;
+    }
+    .span:after {
+      width: 0%;
+      height: 2px;
+    }
+    .span:hover{
+      color:  rgb(103 232 249);
+      background: transparent;
+    }
+    .span:hover:before {
+      height: 100%;
+    }
+    .span:hover:after {
+      width: 100%;
+    }
+    .span span:before,
+    .span span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: rgb(103 232 249);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .span span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .span span:after {
+      height: 2px;
+      width: 0%;
+    }
+    .span span:hover:before {
+      height: 100%;
+    }
+    .span span:hover:after {
+      width: 100%;
+    }
+
+
+  /* Shadow cardNFT */
+
+  .box:hover  .shad2{
+    transform: rotate(3deg);
+    transform: matrix(0,1, 0.1, -0.1, 0.1, 0, 8);
+  }
+
+  .box:hover  .ef-img{
+    transform: scale(1.1);
+
+  }
+
+  
